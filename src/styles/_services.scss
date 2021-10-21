@@ -1,0 +1,33 @@
+.text__header{
+  font-size: 3rem;
+}
+
+.services{
+  align-items: center;
+  gap: .3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 768px) {
+  .services__main{
+    max-height: 58vh;
+  }
+  .services{
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &__back-card{
+      max-height: 38vh;
+    }
+
+    &__back-text{
+      font-size: 15px;
+    }
+    &__back-img{
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+}

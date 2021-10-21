@@ -1,0 +1,32 @@
+.header{
+  align-items: center;
+  background-color: #212529;
+  display: flex;
+  height: 90vh;
+  width: 100%;
+   
+  &__image{
+    border-radius: 250px;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    box-shadow: 0 0 20px;
+  }
+}
+
+.bounce-1{
+  animation-name: bounce-1;
+  animation-timing-function: linear; 
+}
+
+@keyframes bounce-1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@media screen and (min-width: 768px) {
+  .header{
+    height: 93.3vh;
+  }
+}
