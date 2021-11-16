@@ -11,23 +11,27 @@
 
 
 @media screen and (min-width: 768px) {
-  .services__main{
-    max-height: 58vh;
-  }
+  
+}
+
+@media screen and (min-width: 990px){
   .services{
     flex-direction: row;
-    justify-content: space-evenly;
-
-    &__back-card{
-      max-height: 38vh;
+    gap: 2rem;
+    &__back{
+      width: 93%;
+      &-img{
+        margin: 0 auto;
+        width: 60%;
+      }
     }
+  }
 
-    &__back-text{
-      font-size: 15px;
-    }
-    &__back-img{
-      margin: 0 auto;
-      width: 70%;
+  .services__front-img, .services__back-img{
+    transition: all .3s ease-in-out;
+
+    &:hover{
+      transform: scale(1.01);
     }
   }
 }

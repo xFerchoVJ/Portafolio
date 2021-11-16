@@ -2,12 +2,12 @@ import React from "react";
 
 const Services = () => {
   return (
-    <main className="container py-5 services__main">
+    <main className="container py-5 services__main" id="services">
       <h1 className="text-center text__header">Services</h1>
       <div className="services">
         <div className="services__front py-4">
-          <div className="card services__front-img p-2" style={{ width: "18rem" }}>
-            <img className="card-img-top" src="/img/undraw_nuxt_js_0fq9.svg" alt="Card frontend" />
+          <div className="card services__front-card p-2">
+            <img className="card-img-top services__front-img" src="/img/undraw_nuxt_js_0fq9.svg" alt="Card frontend" />
             <div className="card-body">
               <h5 className="card-title">Frontend</h5>
               <p className="card-text">
@@ -19,7 +19,7 @@ const Services = () => {
           </div>
         </div>
         <div className="services__back py-4">
-          <div className="card p-2 services__back-card" style={{ width: "17rem" }}>
+          <div className="card p-2 services__back-card">
             <img className="card-img-top services__back-img" src="/img/undraw_server_cluster_jwwq.svg" alt="Card backend" />
             <div className="card-body">
               <h5 className="card-title">Backend</h5>

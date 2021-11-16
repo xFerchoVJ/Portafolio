@@ -1,0 +1,30 @@
+.section{
+  &__wrapper{
+    text-align: justify;
+    width: 95%;
+  }
+
+  &__exp{
+    &-muted{
+      display: block;
+      color: #8b8b8b;
+      margin-bottom: 1.1rem;
+    }
+
+    &-text{
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .section__wrapper-flex{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .section__exp{
+    margin: 0 auto;
+    max-width: 50vh;
+  }
+}

@@ -1,8 +1,8 @@
 import React from "react";
-
+import { links } from "../data";
 const Navegation = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-2 fixed-top">
       <div className="container">
         <a className="navbar-brand fs-4" href="/">
           My Portfolio
@@ -20,21 +20,15 @@ const Navegation = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item fs-5 pe-2">
-              <a className="nav-link" aria-current="page" href="/">
-                About Me
-              </a>
-            </li>
-            <li className="nav-item fs-5 pe-2">
-              <a className="nav-link" href="/">
-                My Experience
-              </a>
-            </li>
-            <li className="nav-item fs-5">
-              <a className="nav-link" href="/">
-                Contact Me
-              </a>
-            </li>
+            {links.map((link) => {
+              return (
+                <li className="nav-item fs-5 pe-2">
+                  <a href={link.url} key={link.id} className="nav-link">
+                    {link.text}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

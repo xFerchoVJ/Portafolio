@@ -1,0 +1,43 @@
+.footer{
+  border-top: 1px solid #ccc;
+  padding: 2rem 0;
+  
+  &__social{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  &__links{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+
+    &-item{
+      color: white;
+      font-size: 18px;
+    }
+  }
+  h2,p{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .footer__social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer__links-item{
+    transition: all .3s ease-in-out;
+
+    &:hover{
+      color: darken($color: #fff, $amount: 20);
+    }
+  }
+}

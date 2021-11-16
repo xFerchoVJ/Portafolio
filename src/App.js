@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Navegation from "./components/Navegation";
 import Services from "./components/Services";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Services />
       <Experience />
+      <Footer/>
     </>
   );
 }
